@@ -80,7 +80,7 @@ function generify (source, dest, data, onFile, done) {
   function replacer () {
     if (transforms[this.key]) {
       return transforms[this.key](getNestedValue(data, this.key), {
-        souce: this.source,
+        source: this.source,
         dest: this.dest,
         key: this.key
       })
